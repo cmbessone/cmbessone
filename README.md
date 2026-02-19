@@ -1,41 +1,125 @@
-# Hi, I'm Cristian Martín Bessone 👋
+# 👋 Hi, I'm Cristian Martín Bessone
 
-I'm an Software Engineer with deep expertise in AI, backend development, and scalable systems. Passionate about building cloud-native micro-SaaS products that leverage automation and AI to solve real-world problems for small businesses and creators.
+I'm a Software Engineer with deep expertise in **AI-first backend systems**, scalable cloud-native architecture, and building real-world **micro-SaaS products powered by autonomous agents** and governance.
+
+I'm passionate about shipping tools that help developers, creators, and small businesses automate complex workflows using modern AI responsibly — with guardrails, observability, and cost control baked in.
 
 ## 🚀 My Mission
-As a solo founder and full-stack engineer, I'm crafting a portfolio of low-cost, scalable micro-SaaS tools. Each product is:
-- **Cloud-native & Efficient**: Deployed on AWS ECS Fargate Spot for cost savings, with serverless options where possible.
-- **Tech Stack**: FastAPI (Python) backends, Next.js + Tailwind/shadcn/ui frontends, Stripe for billing, and AI integrations (Whisper, Qdrant, Valkey, LLMs).
-- **Developer-Friendly**: Managed in a monorepo with reusable templates ("SaaS Kit"), CI/CD automation, and AI-assisted workflows to ship fast.
 
-My goal: Attract 1,000+ users across 5+ products in the next year while bootstrapping toward investor interest. Focus areas include AI-driven automation for e-commerce, sales, and compliance.
+Solving real problems with cloud-native SaaS that’s:
+- **Lean & cost-effective** — serverless where it makes sense, and cost-optimized infra elsewhere (Railway, ECS Spot, Lambda).
+- **AI-first by design** — governed execution, risk scoring, and auditability
+- **Enterprise-minded yet accessible** — clear APIs, dashboards, and UX for diverse users
 
-## 📂 Portfolio Monorepo
-All my SaaS projects live in a professional monorepo: [saas-portfolio](https://github.com/cmbessone/saas-portfolio). It includes:
-- Reusable templates for rapid prototyping.
-- Live services like Voice Qualifier and Fraud Signals.
-- Infrastructure-as-Code for one-click deploys.
+I’m building a portfolio of AI-driven SaaS tools while also advancing best practices around **AI Governance**, **agent orchestration**, and **cloud backend reliability**.
 
-## 🌟 Featured Projects (Coming Soon)
+## 📍 Where I’m Headed
+- Ship 5+ micro-SaaS products that are bootstrapped revenue drivers
+- Reach 1,000+ users across the suite
+- Publish tools and frameworks that shape how teams build with GenAI responsibly
+
+Connect with me:  
+🔗 **Website** — https://cristianbessone.com  
+🔗 **LinkedIn** — https://linkedin.com/in/cmbessone  
+📧 **Email** — cristian@cmbessone.com  
+🐦 **X/Twitter** — https://x.com/cmbessone
+
+---
+
+## 📂 📦 Portfolio Monorepo
+
+This repo is the foundation of my SaaS ecosystem — a reusable, scalable codebase that accelerates development and encapsulates best practices.
+
+### Features
+- Templates for SaaS engines (FastAPI + Vercel + Stripe + AI)
+- Reusable Cloud infra code (Terraform / OpenTofu)
+- Agent orchestration scaffolds (CrewAI / LangGraph-ready)
+- Observability + cost governance patterns
+- CI/CD pipelines for rapid iteration
+
+Whether it’s a brand-new AI worker or a marketplace-ready SaaS module, this monorepo gives me a **fast runway to production**.
+
+---
+
+## 🌟 Featured Projects
+
 | Project | Description | Tech Highlights | Status |
 |---------|-------------|-----------------|--------|
-| 📑 Contract Lite | Lightweight contract risk analysis with LLM summaries. | OpenAI, DynamoDB | In Development |
-| 🕵️ Fraud Signals | Low-cost fraud detection for small e-com stores. | Embeddings, Qdrant, Stripe | Planning |
-| 🎙️ Voice Qualifier | AI-powered lead scoring from voice calls using Whisper + TTS. | Vocode, FastAPI, Next.js | Planning |
-| 🌐 Site Auditor | Automated SEO/performance audits with PDF reports. | Puppeteer, S3+CloudFront | Planning |
+| 🛡️ **SentinelAI** | Governed agent execution platform with cost and risk audit | FastAPI, CrewAI, Kimi, Postgres, Stripe | In Development |
+| 📑 **Contract Lite** | Contract risk analysis with LLM summaries & actionable insights | FastAPI, Pinecone/Qdrant, Stripe | In Dev |
+| 🕵️ **Fraud Signals** | Low-cost fraud detection for e-commerce | Embeddings, Vector search | Planning |
+| 🎙️ **Voice Qualifier** | AI-powered call lead scoring & TTS workflows | Whisper, Vocode, Next.js | Planning |
+| 🌐 **Site Auditor** | Automated SEO/Performance audit with PDF reports | Puppeteer/Lighthouse | Planning |
+
+> More products and experimental agents landing soon.
+
+---
 
 ## 🛠️ Skills & Tools
-- **Backend**: Python, FastAPI, SQLAlchemy, JWT Auth.
-- **Frontend**: Next.js, React, Tailwind CSS, shadcn/ui.
-- **DevOps**: AWS (ECS Fargate, Lambda), Terraform/OpenTofu, GitHub Actions.
-- **AI/ML**: Whisper, Qdrant, Valkey, Embeddings, LLMs.
-- **Other**: Stripe Billing, Conventional Commits, Pre-commit Hooks.
 
-## 📈 Goals
-- Launch MVP for Voice Qualifier by Q4 2025.
-- Achieve $1K MRR across portfolio by mid-2026.
-- Open-source reusable components to build community.
+### Backend & API
+- Python, FastAPI, SQLAlchemy
+- JWT, OAuth, RBAC
+- Autonomous agent orchestration (CrewAI / LangGraph / custom)
 
-Let's connect! [LinkedIn](https://linkedin.com/in/cmbessone) | [Email](mailto:cristian@cmbessone.com) | [X/Twitter](https://x.com/cmbessone)
+### Frontend & UI
+- Next.js 14
+- React, TypeScript
+- Tailwind CSS, shadcn/ui, Radix
 
-![Metrics](https://github-readme-stats.vercel.app/api?username=cmbessone&show_icons=true&theme=radical&hide_border=true)
+### DevOps & Infra
+- AWS (ECS Fargate + Spot, Lambda, Dynamo, CloudFront)
+- Railway, Render, Fly.io for cost-efficient backend hosting
+- Terraform / OpenTofu
+- Github Actions for CI/CD
+
+### AI/ML
+- LLMs (Kimi, OpenAI, Claude)
+- Whisper for multimodal audio AI
+- Vector DBs (Qdrant, Pinecone)
+- Embeddings for semantic search
+- Governance & audit patterns
+
+### Payments & Monetization
+- Stripe Billing + Checkout + Webhooks
+- Multi-tenant usage & metered plans
+
+---
+
+## 📈 Principles I Follow
+
+### 🧠 Responsible AI
+Every platform I build incorporates:
+- **Governance layers** (input constraints, execution budgets)
+- **Output evaluation** (risk scoring, red-flag detectors)
+- **Audit trails** (structured logs, traceability)
+- **Human review triggers** when thresholds are exceeded
+
+This is how AI can be **safe, accountable, and business-ready.**
+
+### ⚡ Developer Experience First
+- Monorepo standards
+- Reusable templates
+- CLI tools & generators
+- AI-assisted scaffolding
+
+### 💸 Cost-aware Design
+- Serverless + spot infrastructure
+- Budget caps on AI usage
+- Transparent metrics for users and maintainers
+
+---
+
+## 🛣️ Current Goals (Q1–Q4 2026)
+
+- 🚀 Launch **SentinelAI v1** with:
+  - Multi-tenant API
+  - Dashboard & cost center views
+  - Subscription plans + Stripe integration
+- 🧰 Ship **Voice Qualifier MVP**
+- 📣 Publish content on AI Governance patterns
+- 📊 Reach product-market fit signals across 1+ SaaS
+
+---
+
+*Want to collaborate, learn together, or build something game-changing? Let’s talk.* 🚀
