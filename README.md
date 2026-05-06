@@ -1,22 +1,21 @@
 # 👋 Hi, I'm Cristian Martín Bessone
 
-I'm a Software Engineer with deep expertise in **AI-first backend systems**, scalable cloud-native architecture, and building real-world **micro-SaaS products powered by autonomous agents** and governance.
+**AI Architect & Software Engineer** — I design and build scalable systems at the intersection of software architecture and artificial intelligence. My focus is on production-ready AI systems with governance, observability, and real business value baked in from the start.
 
-I'm passionate about shipping tools that help developers, creators, and small businesses automate complex workflows using modern AI responsibly — with guardrails, observability, and cost control baked in.
+I work with engineering teams and technical founders who want to move beyond AI experimentation and ship systems that are auditable, commercially defensible, and built to last.
 
-## 🚀 My Mission
+## 🚀 What I Do
 
-Solving real problems with cloud-native SaaS that's:
-- **Lean & cost-effective** — serverless where it makes sense, and cost-optimized infra elsewhere (Railway, ECS Spot, Lambda).
-- **AI-first by design** — governed execution, risk scoring, and auditability
-- **Enterprise-minded yet accessible** — clear APIs, dashboards, and UX for diverse users
-
-I'm building a portfolio of AI-driven SaaS tools while also advancing best practices around **AI Governance**, **agent orchestration**, and **cloud backend reliability**.
+- **AI Systems Architecture** — designing governed, observable, and cost-controlled AI pipelines for production
+- **Cloud-Native Engineering** — scalable backends, serverless infra, and lean SaaS products
+- **AI Governance** — creator of the **GDA framework** and author of *Governed Decision Architecture* (2026)
+- **Product Building** — bootstrapped micro-SaaS that solves real problems for developers, creators, and businesses
 
 ## 📍 Where I'm Headed
-- Ship 5+ micro-SaaS products that are bootstrapped revenue drivers
-- Reach 1,000+ users across the suite
-- Publish tools and frameworks that shape how teams build with GenAI responsibly
+- 📖 Publish **Governed Decision Architecture** — my book and framework for governing AI agents in production
+- Ship 5+ micro-SaaS products as bootstrapped revenue drivers
+- Reach 1,000+ users across the product suite
+- Establish GDA as a reference framework for teams building responsible AI systems
 
 Connect with me:  
 🌐 **Website** — https://cristianbessone.com  
@@ -26,18 +25,73 @@ Connect with me:
 
 ---
 
-## 📂 📦 Portfolio Monorepo
+## 📖 Governed Decision Architecture (GDA)
 
-This repo is the foundation of my SaaS ecosystem — a reusable, scalable codebase that accelerates development and encapsulates best practices.
+> *"The most expensive thing an engineering team can do is retrofit governance into an AI system that was built without it."*
+
+**Governed Decision Architecture** is my original framework — and upcoming book — for governing AI agents in production. It addresses one of the hardest structural problems in applied AI: how to deploy autonomous agents that are safe, auditable, cost-controlled, and policy-compliant **by design**, not as an afterthought.
+
+### The Problem GDA Solves
+
+Across fintech, legal, healthcare, and insurance, I kept seeing the same pattern repeat: teams prove a model works in a controlled environment, deploy it with minimal surrounding infrastructure, and then can't explain what happened when something goes wrong. The gap is never in the model. The gap is in the architecture around it.
+
+Existing approaches — dashboards, prompt engineering, post-hoc audits — treat governance as something you layer on top of a system. GDA treats governance as an **architectural constraint** enforced at the point of decision, in real time.
+
+### The Four-Layer Pipeline
+
+Every AI decision that affects a user or a regulated outcome passes through a governance pipeline before it is delivered:
+
+```
+User Input
+     │
+     ▼
+┌─────────────────┐
+│  Policy Engine  │  ◄── Pre-execution validation (token limits, quotas, domain rules)
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│   LLM Client    │  ◄── Model abstraction layer (model-agnostic, swappable)
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│ Risk Evaluator  │  ◄── Output scoring before delivery (domain-specific thresholds)
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐
+│  Audit Service  │  ◄── Immutable record of every execution, blocked or completed
+└────────┬────────┘
+         │
+         ▼
+    Decision Output
+```
+
+Each layer has a single non-negotiable responsibility. A failure at any layer stops the pipeline. Every execution — whether it completes or is blocked — produces an audit record.
+
+### Who the Book Is For
+
+- The **CTO** who needs to justify AI deployment to a board that asks about liability
+- The **Head of AI** who knows the model works but suspects the surrounding system is fragile
+- The **Software Architect** who wants a replicable pattern they can implement from scratch
+- The **Founder** building an AI product who wants to design governance in from day one — not retrofit it later
+
+> 🛡️ **SentinelAI** is the reference implementation of GDA — a production platform built ground-up on these principles.  
+> Live at: [sentinelai.cristianbessone.com](https://sentinelai.cristianbessone.com)
+
+---
+
+## 📂 Portfolio Monorepo
+
+This repo is the foundation of my product ecosystem — a reusable, scalable codebase that accelerates development and encapsulates best practices.
 
 ### Features
 - Templates for SaaS engines (FastAPI + Vercel + Stripe + AI)
-- Reusable Cloud infra code (Terraform / OpenTofu)
+- Reusable cloud infra (Terraform / OpenTofu)
 - Agent orchestration scaffolds (CrewAI / LangGraph-ready)
-- Observability + cost governance patterns
+- Observability + governance patterns
 - CI/CD pipelines for rapid iteration
-
-Whether it's a brand-new AI worker or a marketplace-ready SaaS module, this monorepo gives me a **fast runway to production**.
 
 ---
 
@@ -45,14 +99,12 @@ Whether it's a brand-new AI worker or a marketplace-ready SaaS module, this mono
 
 | Project | Description | Tech Highlights | Status |
 |---------|-------------|-----------------|--------|
-| 🛡️ **SentinelAI** | Governed agent execution platform with cost and risk audit | FastAPI, CrewAI, Kimi, Postgres, Stripe | ✅ Launched |
+| 🛡️ **SentinelAI** | Reference implementation of GDA — governed agent execution with cost and risk audit | FastAPI, Next.js, PostgreSQL, Stripe | ✅ Launched |
 | 🤝 **SPO.IA** | AI-powered sponsorship connections platform — matching brands, influencers, events & programs | FastAPI, Next.js, PostgreSQL, AI Matching | 🔨 In Development |
 | 📑 **Contract Lite** | Contract risk analysis with LLM summaries & actionable insights | FastAPI, Pinecone/Qdrant, Stripe | In Dev |
 | 🕵️ **Fraud Signals** | Low-cost fraud detection for e-commerce | Embeddings, Vector search | Planning |
 | 🎙️ **Voice Qualifier** | AI-powered call lead scoring & TTS workflows | Whisper, Vocode, Next.js | Planning |
 | 🌐 **Site Auditor** | Automated SEO/Performance audit with PDF reports | Puppeteer/Lighthouse | Planning |
-
-> More products and experimental agents landing soon.
 
 ---
 
@@ -60,7 +112,7 @@ Whether it's a brand-new AI worker or a marketplace-ready SaaS module, this mono
 
 > **Live:** [spo-ia.vercel.app](https://spo-ia.vercel.app)
 
-SPO.IA is an AI-powered platform that connects **brands** (sponsors) with **sponsorable entities** — influencers, events, and programs — through intelligent matching, commercial tracking, and a structured data model built for the sponsorship ecosystem.
+SPO.IA is a platform that connects **brands** (sponsors) with **sponsorable entities** — influencers, events, and programs — through intelligent matching, commercial tracking, and a structured data model built for the sponsorship ecosystem.
 
 ### 🎯 What it solves
 The sponsorship market is fragmented. Brands struggle to find the right media properties. Influencers, events and programs lack a centralized way to attract and manage sponsors. SPO.IA bridges that gap with a CRM-grade data layer and AI-driven matching.
@@ -69,31 +121,22 @@ The sponsorship market is fragmented. Brands struggle to find the right media pr
 
 The platform is organized around five functional groups:
 
-**A. Sponsoring Entities**
-- **Brands** — companies that invest in sponsorships, registered per country with segmentation attributes for matching (industry, target audience, values, investment range).
+**A. Sponsoring Entities** — Brands registered per country with segmentation attributes for matching (industry, target audience, values, investment range).
 
-**B. Sponsorable Entities**
-- **Influencers** — content creators with audience metrics, pricing ranges, and content categorization.
-- **Events** — one-off or recurring events that need sponsors, with geolocation, capacity, and commercial attributes.
-- **Programs** — media programs (TV, digital, podcast) seeking sponsorship, with broadcast schedules and audience profiles.
+**B. Sponsorable Entities** — Influencers (with audience metrics and pricing), Events (geolocation, capacity, commercial attributes), and Programs (broadcast schedules, audience profiles).
 
-**C. Intermediary Entities**
-- **Representatives** — agencies and managers that represent brands or influencers commercially.
-- **Operators** — producers and media companies that manage events and programs.
+**C. Intermediary Entities** — Representatives (agencies/managers) and Operators (producers, media companies).
 
-**D. Internal Operations**
-- **Agents** — internal commercial team members with role-based access.
-- **Roles** — permission and access control layer for agents.
+**D. Internal Operations** — Agents (commercial team) with role-based access control.
 
-**E. Transversal**
-- **Contacts** — the people layer. Every entity has associated contacts, managed via relational bridge tables (`marca_contacto`, `evento_contacto`, `programa_contacto`, `operadora_contacto`, `representante_contacto`), supporting many-to-many relationships with a principal contact flag.
+**E. Transversal** — Contacts as the people layer, linked to all entities via dedicated many-to-many bridge tables (`marca_contacto`, `evento_contacto`, `programa_contacto`, `operadora_contacto`, `representante_contacto`).
 
 ### 🧩 Key Design Decisions
-- **Contacts as a transversal entity** — decoupled from business entities, linked via dedicated relational tables to support many-to-many associations.
-- **Logical deletes** — all tables use soft delete (`deleted_time`, `deleted_by`) for full audit trails.
-- **Snapshot metrics** — social media stats (followers, engagement per network) are stored as snapshots, not historical time series (planned for v2).
-- **Flexible intermediation** — influencers, events, and programs can exist with or without a representative/operator, supporting both direct and mediated commercial flows.
-- **AI matching attributes** — every sponsorable and sponsoring entity carries segmentation fields (`industry`, `target_audience`, `values`, `spo_group`, `spo_category`, `spo_subcategory`) designed to feed a future matching engine.
+- **Contacts as a transversal entity** — decoupled from business entities, linked via relational tables with a principal contact flag
+- **Logical deletes** — all tables use soft delete (`deleted_time`, `deleted_by`) for full audit trails
+- **Snapshot metrics** — social media stats stored as snapshots, historical time series planned for v2
+- **Flexible intermediation** — entities can exist with or without representatives/operators
+- **AI matching attributes** — every entity carries segmentation fields designed to feed a future matching engine
 
 ### 🛠️ Tech Highlights
 - **Backend:** FastAPI + SQLAlchemy + PostgreSQL
@@ -112,24 +155,23 @@ Phase 1 — Master data & ABM (CRUD for all base entities). Pipeline, opportunit
 ### Backend & API
 - Python, FastAPI, SQLAlchemy
 - JWT, OAuth, RBAC
-- Autonomous agent orchestration (CrewAI / LangGraph / custom)
+- Agent orchestration (CrewAI / LangGraph / custom)
 
 ### Frontend & UI
-- Next.js 14
-- React, TypeScript
+- Next.js 14, React, TypeScript
 - Tailwind CSS, shadcn/ui, Radix
 
 ### DevOps & Infra
-- AWS (ECS Fargate + Spot, Lambda, Dynamo, CloudFront)
-- Railway, Render, Fly.io for cost-efficient backend hosting
+- AWS (ECS Fargate + Spot, Lambda, DynamoDB, CloudFront)
+- Railway, Render, Fly.io
 - Terraform / OpenTofu
-- Github Actions for CI/CD
+- GitHub Actions for CI/CD
 
-### AI/ML
-- LLMs (Kimi, OpenAI, Claude)
+### AI/ML & Governance
+- LLMs (OpenAI, Claude, Kimi)
 - Vector DBs (Qdrant, Pinecone)
 - Embeddings for semantic search
-- Governance & audit patterns
+- GDA governance pipeline (Policy Engine, Risk Evaluator, Audit Service)
 
 ### Payments & Monetization
 - Stripe Billing + Checkout + Webhooks
@@ -137,39 +179,15 @@ Phase 1 — Master data & ABM (CRUD for all base entities). Pipeline, opportunit
 
 ---
 
-## 📈 Principles I Follow
-
-### 🧠 Responsible AI
-Every platform I build incorporates:
-- **Governance layers** (input constraints, execution budgets)
-- **Output evaluation** (risk scoring, red-flag detectors)
-- **Audit trails** (structured logs, traceability)
-- **Human review triggers** when thresholds are exceeded
-
-This is how AI can be **safe, accountable, and business-ready.**
-
-### ⚡ Developer Experience First
-- Monorepo standards
-- Reusable templates
-- CLI tools & generators
-- AI-assisted scaffolding
-
-### 💸 Cost-aware Design
-- Serverless + spot infrastructure
-- Budget caps on AI usage
-- Transparent metrics for users and maintainers
-
----
-
 ## 🛣️ Current Goals (Q1–Q4 2026)
 
-- ✅ **SentinelAI v1** — Launched with multi-tenant API, dashboard, cost center views, and Stripe integration
+- ✅ **SentinelAI v1** — Launched. Multi-tenant API, GDA governance pipeline, dashboard, Stripe integration
+- 📖 **Governed Decision Architecture** — Book & framework. Coming 2026
 - 🔨 **SPO.IA v1** — Completing master data layer, ABM, and contact relational model
-- 🧰 Ship **Voice Qualifier MVP**
-- 📣 Publish content on AI Governance patterns
+- 🧰 **Voice Qualifier MVP** — In planning
 - 📊 Reach product-market fit signals across 1+ SaaS
 
 ---
 
-*Want to collaborate, learn together, or build something game-changing? Let's talk.* 🚀  
+*Want to collaborate, discuss AI architecture, or implement GDA in your stack? Let's talk.* 🚀  
 🌐 [cristianbessone.com](https://cristianbessone.com)
