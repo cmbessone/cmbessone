@@ -21,7 +21,6 @@ Connect with me:
 🌐 **Website** — https://cristianbessone.com  
 🔗 **LinkedIn** — https://linkedin.com/in/cmbessone  
 📧 **Email** — cristian@cmbessone.com  
-🐦 **X/Twitter** — https://x.com/cmbessone
 
 ---
 
@@ -102,9 +101,7 @@ This repo is the foundation of my product ecosystem — a reusable, scalable cod
 | 🛡️ **SentinelAI** | Reference implementation of GDA — governed agent execution with cost and risk audit | FastAPI, Next.js, PostgreSQL, Stripe | ✅ Launched |
 | 🤝 **SPO.IA** | AI-powered sponsorship connections platform — matching brands, influencers, events & programs | FastAPI, Next.js, PostgreSQL, AI Matching | 🔨 In Development |
 | 📑 **Contract Lite** | Contract risk analysis with LLM summaries & actionable insights | FastAPI, Pinecone/Qdrant, Stripe | In Dev |
-| 🕵️ **Fraud Signals** | Low-cost fraud detection for e-commerce | Embeddings, Vector search | Planning |
-| 🎙️ **Voice Qualifier** | AI-powered call lead scoring & TTS workflows | Whisper, Vocode, Next.js | Planning |
-| 🌐 **Site Auditor** | Automated SEO/Performance audit with PDF reports | Puppeteer/Lighthouse | Planning |
+
 
 ---
 
